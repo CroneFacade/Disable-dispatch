@@ -1,0 +1,9 @@
+name: CroneFacade/Disable-dispatch
+version: 1.0.0
+description: NFive plugin to disable all AI dispatch and set max wanted level to 0.
+author: CroneFacade
+license: LGPL-3.0-or-later
+client:
+  main:
+    - CroneFacade.DisableDispatch.Client
+  files:
