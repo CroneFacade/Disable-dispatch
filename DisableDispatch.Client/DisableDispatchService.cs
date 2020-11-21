@@ -29,21 +29,9 @@ namespace CroneFacade.DisableDispatch.Client
 			API.SetCreateRandomCops(false);
 			API.SetCreateRandomCopsNotOnScenarios(false);
 			API.SetCreateRandomCopsOnScenarios(false);
-			API.EnableDispatchService(1, false); // PoliceAutomobile
-			API.EnableDispatchService(2, false); // PoliceHelicopter
-			API.EnableDispatchService(3, false); // FireDepartment
-			API.EnableDispatchService(4, false); // SwatAutomobile
-			API.EnableDispatchService(5, false); // AmbulanceDepartment
-			API.EnableDispatchService(6, false); // PoliceRiders
-			API.EnableDispatchService(7, false); // PoliceVehicleRequest
-			API.EnableDispatchService(8, false); // PoliceRoadBlock
-			API.EnableDispatchService(9, false); // PoliceAutomobileWaitPulledOver 
-			API.EnableDispatchService(10, false); // PoliceAutomobileWaitCruising 
-			API.EnableDispatchService(11, false); // Gangs 
-			API.EnableDispatchService(12, false); // SwatHelicopter 
-			API.EnableDispatchService(13, false); // PoliceBoat 
-			API.EnableDispatchService(14, false); // ArmyVehicle 
-			API.EnableDispatchService(15, false); // BikerBackup 
+			for (int service = 1; service < 16; service++) {
+				API.EnableDispatchService(service, false);
+			}
 		}
 	}
 }
